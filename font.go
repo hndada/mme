@@ -1,5 +1,12 @@
 package mme
 
+type Font struct {
+	Family []string
+	Style  FontStyle
+	Weight FontWeight
+	Size
+}
+
 type FontStyle int
 
 const (
@@ -17,13 +24,6 @@ const (
 	FontWeightLighter
 	// 100~900
 )
-
-type Font struct {
-	Family []string
-	Style  FontStyle
-	Weight FontWeight
-	Size
-}
 
 func NewFont(family string) Font {
 	return Font{

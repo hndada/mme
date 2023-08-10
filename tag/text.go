@@ -1,7 +1,9 @@
-package mme
+package tag
 
-// Anchor tag
-func NewATag() Element {
+import . "github.com/hndada/mme"
+
+// <a>
+func Anchor() Element {
 	return Element{
 		Tag: "a",
 		Text: Text{
@@ -12,8 +14,8 @@ func NewATag() Element {
 	}
 }
 
-// Strong tag
-func NewStrongTag() Element {
+// <strong>
+func Strong() Element {
 	return Element{
 		Tag: "strong",
 		Text: Text{
@@ -24,8 +26,8 @@ func NewStrongTag() Element {
 	}
 }
 
-// Emphasis tag
-func NewEmTag() Element {
+// <em>
+func Emphasis() Element {
 	return Element{
 		Tag: "em",
 		Text: Text{
@@ -36,7 +38,8 @@ func NewEmTag() Element {
 	}
 }
 
-func NewHorizontalRuleTag() Element {
+// <hr>
+func HorizontalRule() Element {
 	return Element{
 		Tag: "hr",
 		Size: Size{
@@ -50,7 +53,9 @@ func NewHorizontalRuleTag() Element {
 		},
 	}
 }
-func NewAddressTag() Element {
+
+// <address>
+func Address() Element {
 	return Element{
 		Tag: "address",
 		Text: Text{
@@ -61,7 +66,8 @@ func NewAddressTag() Element {
 	}
 }
 
-func NewPreTag() Element {
+// <pre>
+func Pre() Element {
 	return Element{
 		Tag: "pre",
 		Border: Border{
@@ -78,7 +84,8 @@ func NewPreTag() Element {
 	}
 }
 
-func NewCodeTag() Element {
+// <code>
+func Code() Element {
 	return Element{
 		Tag: "code",
 		Border: Border{

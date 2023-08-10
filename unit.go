@@ -2,6 +2,8 @@ package mme
 
 import "fmt"
 
+type Value string
+
 type UnitType int
 
 const (
@@ -50,10 +52,6 @@ var unitSuffixes = map[UnitType]string{
 	Radian:  "rad",
 	Gradian: "grad",
 }
-
-// type Length = string
-// type Angle = string
-type Value = string
 
 // both "35px" and Unit(35, Pixel) are valid.
 // Unit(35, Pixel) returns "35px"

@@ -1,5 +1,6 @@
 package mme
 
+// https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals
 type Text struct {
 	Data  string
 	Font  Font
