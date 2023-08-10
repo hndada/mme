@@ -1,14 +1,32 @@
 package mme
 
+// Todo: box-sizing
+// Todo: overflow
 type Element struct {
+	Tag string // for semantic tags
+
 	*Node
-	Display int // block, inline
-	Layout  int // normal, flex, grid
+	Display DisplayType
+	Layout  LayoutType
 
-	// Todo: move fields of Box to Element
-	Box
+	Size
+	Min      Size
+	Max      Size
+	Position XY
 
-	// Overflow: fixed to `auto``
-	// Overflow[2]
+	Border     Border
+	Background Background
+	Text       Text
+
 	IsScrollAlwaysVisible bool
+
+	// Interaction
+	Cursor CursorType
 }
+
+type CursorType int
+
+const (
+	CursorDefault CursorType = iota
+	CursorPointer
+)

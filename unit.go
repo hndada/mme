@@ -51,8 +51,8 @@ var unitSuffixes = map[UnitType]string{
 	Gradian: "grad",
 }
 
-type Length = string
-type Angle = string
+// type Length = string
+// type Angle = string
 type Value = string
 
 // both "35px" and Unit(35, Pixel) are valid.
