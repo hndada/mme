@@ -56,3 +56,17 @@ var unitSuffixes = map[UnitType]string{
 // both "35px" and Unit(35, Pixel) are valid.
 // Unit(35, Pixel) returns "35px"
 func Unit(v float64, t UnitType) string { return fmt.Sprintf("%f%s", v, unitSuffixes[t]) }
+
+// "The only value that you will commonly use is pixels."
+// https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
+// type Pixel float64
+
+// const (
+// 	Inch  Pixel = 96
+// 	Pica  Pixel = Inch / 6
+// 	Point Pixel = Pica / 12
+
+// 	Centimeter        Pixel = 37.8
+// 	Millimeter        Pixel = Centimeter / 10
+// 	QuarterMillimeter Pixel = Millimeter / 4
+// )
