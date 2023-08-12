@@ -17,11 +17,13 @@ type Element struct {
 	Border     Border
 	Background Background
 	Text       Text
+	Shadow     Shadow
 
 	IsScrollAlwaysVisible bool
 
 	// Interaction
-	Cursor CursorType
+	Cursor     CursorType
+	CaretColor Color
 }
 
 type CursorType int
